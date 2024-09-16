@@ -49,7 +49,7 @@ function createFlower() {
     );
 }
 
-setInterval(changePhoto, 5000); // Muda a foto e a citação a cada 5 segundos
+setInterval(changePhoto, 7000); // Muda a foto e a citação a cada 5 segundos
 
 // Cria flores periodicamente
 setInterval(createFlower, 500);
