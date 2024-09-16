@@ -54,8 +54,6 @@ setInterval(changePhoto, 5500); // Muda a foto e a citação a cada 5 segundos
 // Cria flores periodicamente
 setInterval(createFlower, 500);
 
-function unmuteMusic() {
-    var audio = document.getElementById('background-music');
-    audio.muted = false;  // Desativa o "muted" para ativar o som
-    audio.play();  // Reproduz o áudio, caso ele tenha sido pausado
-}
+document.getElementById('background-music').play().catch(function() {
+    document.getElementById('audio-message').style.display = 'block';
+});

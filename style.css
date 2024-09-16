@@ -86,3 +86,12 @@ img {
     }
 }
 
+#audio-message {
+    display: none; /* Inicialmente escondido */
+    background-color: #ffffff;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+}
