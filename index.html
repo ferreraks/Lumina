@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="./style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
 </head>
+
 <body>
     <div class="container">
         <div class="photo-frame">
@@ -17,14 +19,15 @@
         </div>
         <div id="flower-container"></div>
     </div>
-    <div class="audio-player">
-        <audio controls>
-            <source src="https://www.youtube.com/watch?v=SiAmQZGRcY4" type="audio/mp3">
-            Seu navegador não suporta o elemento de áudio.
-        </audio>
-    </div>
+
+    <audio id="background-music" autoplay loop>
+        <source src="./love.mp3" type="audio/mp3">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <button id="play-music" onclick="unmuteMusic()">Ativar Música</button>
 
     <script src="./script.js"></script>
 </body>
-</html>
 
+</html>

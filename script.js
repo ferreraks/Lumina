@@ -52,4 +52,10 @@ function createFlower() {
 setInterval(changePhoto, 5000); // Muda a foto e a citação a cada 5 segundos
 
 // Cria flores periodicamente
-setInterval(createFlower, 2000);
+setInterval(createFlower, 500);
+
+function unmuteMusic() {
+    var audio = document.getElementById('background-music');
+    audio.muted = false;  // Desativa o "muted" para ativar o som
+    audio.play();  // Reproduz o áudio, caso ele tenha sido pausado
+}
